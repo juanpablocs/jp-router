@@ -1,11 +1,6 @@
 import Routes from './core/routes';
-import UserController from './controllers/user';
+import IndexController from './modules/home/IndexController';
 
 var app = new Routes;
 
-app.map('/', function(){
-  console.log('index home');
-  document.getElementById('test').innerHTML = 'router map home /';
-});
-
-app.map('/user/:user/', UserController);
+app.map('/', IndexController);
