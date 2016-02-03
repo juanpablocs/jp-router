@@ -2,8 +2,23 @@
 
 demo básica de como manejar routers y controllers en javascript utilizando ES6, webpack y babel.
 
+##Install:
 
-Ejemplo:
+```
+git clone git@github.com:juanpablocs/simple-router-js.git && cd simple-router-js
+```
+
+```
+npm install --global webpack webpack-dev-server
+```
+
+```
+npm install && npm run start
+```
+
+##Ejemplos:
+
+Básico:
 
 ```js
 import Routes from './core/routes';
