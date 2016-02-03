@@ -54,7 +54,7 @@ Ejemplo de un blog:
 app.map('/blog/:title/[0-9]+/', MyBlogController);
 
 // in controller
-clas MyBlogController{
+class MyBlogController{
   constructor(title, id){
     this.title = title;
     this.id = id;
