@@ -4,3 +4,4 @@ import IndexController from './IndexController';
 var app = new Routes;
 
 app.map('/', IndexController);
+

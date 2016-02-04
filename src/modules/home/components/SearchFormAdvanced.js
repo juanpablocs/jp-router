@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 /**
  * 
  */
-class SearchFormAdvanced extends React.Component{
+class SearchFormAdvanced extends Component{
   render(){
     return(
         <div>MyComponent {this.props.name}</div>
