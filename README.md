@@ -1,6 +1,6 @@
 # Simple Router Controller JS
 
-demo básica de como manejar routers y controllers en javascript utilizando ES6, webpack y babel.
+demo básica de como manejar routers y controllers en javascript utilizando ES6.
 
 ##Install:
 
@@ -14,9 +14,9 @@ npm install jp-router --save
 Básico:
 
 ```js
-import Routes from './core/routes';
+import Routes from 'jp-router';
 
-var app = new Routes;
+var app = new Routes({location:window.location.pathname});
 
 app.map('/', function(){
   console.log('index home');
@@ -27,10 +27,10 @@ app.map('/', function(){
 Ejemplo controller:
 
 ```js
-import Routes from './core/routes';
+import Routes from 'jp-router';
 import UserController from './controllers/user';
 
-var app = new Routes;
+var app = new Routes({location:window.location.pathname});
 
 app.map('/user/:username/', UserController);
 
@@ -57,4 +57,4 @@ class MyBlogController{
 ```
 
 
-en progreso...
+work in progress..
